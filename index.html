@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="businessName">Business Name Here</h1>
+        <p id="businessDesc">Business description here.</p>
+        <a id="whatsappLink" class="btn" href="#">Chat on WhatsApp</a>
+    </div>
+
+    <script>
+        const businessName = "John Fashion Store";
+        const businessDesc = "We sell quality clothes at affordable prices.";
+        const whatsappNumber = "2348063559368";
+
+        document.getElementById("businessName").innerText = businessName;
+        document.getElementById("businessDesc").innerText = businessDesc;
+        document.getElementById("whatsappLink").href =
+            "https://wa.me/" + whatsappNumber;
+    </script>
+
+</body>
+</html>
