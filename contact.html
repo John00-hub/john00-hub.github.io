@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delish Bites Menu - Premium Nigerian & Continental dishes in Ibadan">
+    <title>Menu • Delish Bites Ibadan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR (same as index) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Delish Bites</span>
+            </div>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/2349012345678?text=Hello%20Delish%20Bites%2C%20I%27d%20like%20to%20make%20a%20reservation" 
+                   class="btn-whatsapp-nav" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 3.4L3 21"/>
+                        <path d="M13 11a2 2 0 0 1 2 2"/>
+                        <path d="M15 13a2 2 0 0 1 2 2"/>
+                    </svg>
+                    WhatsApp
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MENU HERO -->
+    <header class="menu-hero">
+        <div class="menu-hero-content">
+            <h1>Our Menu</h1>
+            <p>Handcrafted with love using the finest local ingredients</p>
+        </div>
+    </header>
+
+    <!-- CATEGORY FILTER -->
+    <div class="filter-bar">
+        <div class="container">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nigerian">Nigerian Classics</button>
+            <button class="filter-btn" data-category="continental">Continental</button>
+        </div>
+    </div>
+
+    <!-- MENU GRID -->
+    <section class="menu-section section-padding">
+        <div class="container">
+            <div class="menu-grid" id="menu-grid">
+                
+                <!-- Item 1 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="https://picsum.photos/id/1015/600/400" alt="Classic Jollof Rice">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Classic Jollof Rice</h3>
+                            <span class="price">₦3,500</span>
+                        </div>
+                        <p class="menu-desc">Spiced tomato rice with grilled chicken, plantain &amp; coleslaw</p>
+                        <button onclick="orderViaWhatsApp(this)" class="order-btn">
+                            Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="https://picsum.photos/id/133/600/400" alt="Grilled Suya">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Grilled Suya Skewers</h3>
+                            <span class="price">₦2,800</span>
+                        </div>
+                        <p class="menu-desc">Tender beef marinated in yaji spice, served with onions &amp; tomatoes</p>
+                        <button onclick="orderViaWhatsApp(this)" class="order-btn">
+                            Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="https://picsum.photos/id/201/600/400" alt="Egusi Soup">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Egusi Soup &amp; Poundo Yam</h3>
+                            <span class="price">₦4,200</span>
+                        </div>
+                        <p class="menu-desc">Melon seed soup with spinach, crayfish &amp; assorted proteins</p>
+                        <button onclick="orderViaWhatsApp(this)" class="order-btn">
+                            Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-card" data-category="continental">
+                    <div class="menu-image">
+                        <img src="https://picsum.photos/id/292/600/400" alt="Pasta Carbonara">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Creamy Pasta Carbonara</h3>
+                            <span class="price">₦4,500</span>
+                        </div>
+                        <p class="menu-desc">Fresh tagliatelle, pancetta, parmesan &amp; black pepper</p>
+                        <button onclick="orderViaWhatsApp(this)" class="order-btn">
+                            Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-card" data-category="continental">
+                    <div class="menu-image">
+                        <img src="https://picsum.photos/id/312/600/400" alt="Pan-Seared Salmon">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Pan-Seared Salmon</h3>
+                            <span class="price">₦6,500</span>
+                        </div>
+                        <p class="menu-desc">Atlantic salmon, lemon butter sauce, asparagus &amp; saffron rice</p>
+                        <button onclick="orderViaWhatsApp(this)" class="order-btn">
+                            Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-card" data-category="continental">
+                    <div class="menu-image">
+                        <img src="https://picsum.photos/id/870/600/400" alt="Beef Tenderloin">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Beef Tenderloin Steak</h3>
+                            <span class="price">₦7,000</span>
+                        </div>
+                        <p class="menu-desc">8oz fillet, red wine reduction, garlic mash &amp; seasonal vegetables</p>
+                        <button onclick="orderViaWhatsApp(this)" class="order-btn">
+                            Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (same as index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">Delish Bites</h3>
+                    <p class="footer-text">Premium dining in the heart of Ibadan, Nigeria.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>45 Ring Road, Ibadan<br>Oyo State, Nigeria</p>
+                    <p>+234 901 234 5678</p>
+                    <p>info@delishbites.ng</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Monday – Sunday<br>10:00 AM – 10:00 PM</p>
+                    <div class="footer-cta">
+                        <a href="https://wa.me/2349012345678?text=Hello%20Delish%20Bites" class="btn btn-small" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Delish Bites Ibadan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/2349012345678?text=Hi%20Delish%20Bites%2C%20I%27d%20love%20to%20order%20or%20reserve%20a%20table!" 
+       class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.485-.888-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.355L2 22l1.395-5.112a9.828 9.828 0 01-1.328-5.217C2.067 5.98 7.06 1 13.003 1c2.99 0 5.797 1.17 7.91 3.292 2.112 2.12 3.276 4.94 3.276 7.924 0 5.98-4.993 10.96-11.003 10.96"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

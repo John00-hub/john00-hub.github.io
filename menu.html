@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delish Bites Menu - Premium Nigerian & Continental dishes in Ibadan">
+    <title>Menu • Delish Bites Ibadan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Delish Bites</span>
+            </div>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/2349012345678?text=Hello%20Delish%20Bites%2C%20I%27d%20like%20to%20make%20a%20reservation" 
+                   class="btn-whatsapp-nav" target="_blank">
+                    WhatsApp
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MENU HERO -->
+    <header class="menu-hero">
+        <div class="menu-hero-content">
+            <h1>Our Menu</h1>
+            <p>Handcrafted with the finest ingredients • Nigerian soul meets continental elegance</p>
+        </div>
+    </header>
+
+    <!-- CATEGORY FILTER -->
+    <div class="filter-bar">
+        <div class="container">
+            <button class="filter-btn active" data-category="all">All Dishes</button>
+            <button class="filter-btn" data-category="nigerian">Nigerian Classics</button>
+            <button class="filter-btn" data-category="continental">Continental</button>
+        </div>
+    </div>
+
+    <!-- MENU GRID -->
+    <section class="menu-section section-padding">
+        <div class="container">
+            <div class="menu-grid" id="menu-grid">
+                
+                <!-- Item 1 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="images/Jollof.jpeg" alt="Classic Jollof Rice">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Classic Jollof Rice</h3>
+                        <div class="stars">★★★★★</div>
+                        <p class="menu-desc">Spiced tomato rice with grilled chicken, fried plantain & coleslaw</p>
+                        <div class="menu-footer">
+                            <span class="price">₦3,800</span>
+                            <button class="order-btn" 
+                                    data-food="Classic Jollof Rice" 
+                                    data-price="₦3,800">
+                                Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="images/fried rice.jpg" alt="Nigerian Fried Rice">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Nigerian Fried Rice</h3>
+                        <div class="stars">★★★★★</div>
+                        <p class="menu-desc">Mixed vegetables, prawns, chicken & aromatic spices</p>
+                        <div class="menu-footer">
+                            <span class="price">₦3,500</span>
+                            <button class="order-btn" 
+                                    data-food="Nigerian Fried Rice" 
+                                    data-price="₦3,500">
+                                Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="images/amala.jpeg" alt="Amala & Ewedu">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Amala & Ewedu</h3>
+                        <div class="stars">★★★★☆</div>
+                        <p class="menu-desc">Smooth yam swallow with leafy ewedu soup & assorted meats</p>
+                        <div class="menu-footer">
+                            <span class="price">₦3,200</span>
+                            <button class="order-btn" 
+                                    data-food="Amala & Ewedu" 
+                                    data-price="₦3,200">
+                                Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="images/iyan.jpeg" alt="Pounded Yam & Egusi">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Pounded Yam & Egusi</h3>
+                        <div class="stars">★★★★★</div>
+                        <p class="menu-desc">Pounded yam with rich melon seed soup & assorted proteins</p>
+                        <div class="menu-footer">
+                            <span class="price">₦4,500</span>
+                            <button class="order-btn" 
+                                    data-food="Pounded Yam & Egusi" 
+                                    data-price="₦4,500">
+                                Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="images/suya.jpeg" alt="Suya Skewers">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Suya Skewers</h3>
+                        <div class="stars">★★★★★</div>
+                        <p class="menu-desc">Tender beef marinated in yaji spice, served with onions & tomatoes</p>
+                        <div class="menu-footer">
+                            <span class="price">₦2,900</span>
+                            <button class="order-btn" 
+                                    data-food="Suya Skewers" 
+                                    data-price="₦2,900">
+                                Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-card" data-category="nigerian">
+                    <div class="menu-image">
+                        <img src="images/goat.jpeg" alt="Goat Pepper Soup">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Goat Pepper Soup</h3>
+                        <div class="stars">★★★★☆</div>
+                        <p class="menu-desc">Spicy, aromatic goat pepper soup – a Nigerian favourite</p>
+                        <div class="menu-footer">
+                            <span class="price">₦3,000</span>
+                            <button class="order-btn" 
+                                    data-food="Goat Pepper Soup" 
+                                    data-price="₦3,000">
+                                Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="menu-card" data-category="continental">
+                    <div class="menu-image">
+                        <img src="images/chicken.jpeg" alt="Chicken & Chips">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Chicken & Chips</h3>
+                        <div class="stars">★★★★★</div>
+                        <p class="menu-desc">Crispy fried chicken served with golden fries & coleslaw</p>
+                        <div class="menu-footer">
+                            <span class="price">₦4,200</span>
+                            <button class="order-btn" 
+                                    data-food="Chicken & Chips" 
+                                    data-price="₦4,200">
+                                Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="menu-card" data-category="continental">
+                    <div class="menu-image">
+                        <img src="images/chips.jpeg" alt="Beef Shawarma">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Beef Shawarma</h3>
+                        <div class="stars">★★★★★</div>
+                        <p class="menu-desc">Tender spiced beef wrapped in warm flatbread with garlic sauce</p>
+                        <div class="menu-footer">
+                            <span class="price">₦2,500</span>
+                            <button class="order-btn" 
+                                    data-food="Beef Shawarma" 
+                                    data-price="₦2,500">
+                                Order on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+               
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">Delish Bites</h3>
+                    <p class="footer-text">Premium dining in the heart of Ibadan, Nigeria.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>45 Ring Road, Ibadan<br>Oyo State, Nigeria</p>
+                    <p>+234 901 234 5678</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Monday – Sunday<br>10:00 AM – 10:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Delish Bites Ibadan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/2349012345678?text=Hi%20Delish%20Bites%2C%20I%27d%20love%20to%20order%20or%20reserve%20a%20table!" 
+       class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.485-.888-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.355L2 22l1.395-5.112a9.828 9.828 0 01-1.328-5.217C2.067 5.98 7.06 1 13.003 1c2.99 0 5.797 1.17 7.91 3.292 2.112 2.12 3.276 4.94 3.276 7.924 0 5.98-4.993 10.96-11.003 10.96"/>
+        </svg>
+    </a>
+
+    <!-- FINAL FIXED JAVASCRIPT - NOW USING OFFICIAL API (NO MORE "SEND TO" SCREEN) -->
+    <script>
+        function orderViaWhatsApp(btn) {
+    const foodName = btn.getAttribute('data-food');
+    const price = btn.getAttribute('data-price');
+
+    if (!foodName || !price) {
+        alert("⚠️ Something went wrong. Please refresh the page.");
+        return;
+    }
+
+    const message = `Hello Delish Bites!\n\n` +
+                    `I want to order:\n` +
+                    `*${foodName}*\n` +
+                    `Price: *${price}*\n\n` +
+                    `Please confirm availability and let me know the delivery time. Thank you! 🙏`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "2349012345678";
+
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+    window.open(whatsappURL, "_blank");
+}
+
+        // Run when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // All order buttons
+            document.querySelectorAll('.order-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    orderViaWhatsApp(button);
+                });
+            });
+
+            // Category Filter
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const menuCards = document.querySelectorAll('.menu-card');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const category = btn.getAttribute('data-category');
+
+                    menuCards.forEach(card => {
+                        if (category === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = (card.getAttribute('data-category') === category) ? 'block' : 'none';
+                        }
+                    });
+                });
+            });
+
+            // Navbar scroll
+            const navbar = document.getElementById('navbar');
+            if (navbar) {
+                window.addEventListener('scroll', () => {
+                    navbar.classList.toggle('scrolled', window.scrollY > 80);
+                });
+            }
+
+            // Mobile Hamburger
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    const lines = hamburger.querySelectorAll('.hamburger-line');
+                    if (navLinks.classList.contains('active')) {
+                        lines[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                        lines[1].style.opacity = '0';
+                        lines[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+                    } else {
+                        lines[0].style.transform = 'none';
+                        lines[1].style.opacity = '1';
+                        lines[2].style.transform = 'none';
+                    }
+                });
+            }
+
+            console.log('%c✅ Delish Bites - WhatsApp FIXED (no more Send To screen)', 'color:#FF6B35; font-weight:bold;');
+        });
+    </script>
+</body>
+</html>
